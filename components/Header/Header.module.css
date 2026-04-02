@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  padding: 20px 32px;
+  background-color: #000;
+  border-bottom: 1px solid var(--color-border);
+  /* color: white; */
 }
 
 .headerLink {
@@ -23,7 +24,24 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 30px;
+  font-size: 20px;
+}
+
+/* Links nav */
+.navLink {
+  /* border: 1px solid #242323; */
+  background-color: #171717;
+  font-size: 18px;
+
+  border-radius: 14px;
+  padding: 6px 16px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+  }
 }
 
 .navigationItem {
@@ -43,4 +61,8 @@
 
 .logo {
   font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

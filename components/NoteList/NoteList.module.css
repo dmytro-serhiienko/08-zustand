@@ -8,8 +8,8 @@
 }
 
 .listItem {
-  background-color: #ffffff;
-  border: 1px solid #dee2e6;
+  background-color: #171717;
+  /* border: 0.5px solid #434343; */
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -23,7 +23,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 8px 0;
-  color: #212529;
+  color: #ffffff;
 }
 
 .content {
@@ -43,7 +43,7 @@
   padding: 6px 12px;
   font-size: 14px;
   color: #fff;
-  background-color: #dc3545;
+  background-color: #434343;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -65,7 +65,7 @@
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
-  color: #0d6efd;
+  color: #000;
   background-color: #e7f1ff;
   border: 1px solid #b6d4fe;
   border-radius: 12px;
@@ -80,7 +80,7 @@
   padding: 6px 12px;
   font-size: 14px;
   color: #fff;
-  background-color: #0d6efd; /* синій колір */
+  background-color: #434343; /* синій колір */
   border: none;
   border-radius: 4px;
   cursor: pointer;

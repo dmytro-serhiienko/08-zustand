@@ -1,20 +1,23 @@
 import css from "./Home.module.css";
+import { RiQuillPenAiLine } from "react-icons/ri";
 
 export default function Home() {
   return (
     <main className={css.main}>
       <div className={css.container}>
-        <h1 className={css.title}>Welcome to NoteHub</h1>
+        <h1 className={css.title}>
+          <RiQuillPenAiLine />
+          NoteHub — Where Your Ideas Live
+        </h1>
         <p className={css.description}>
-          NoteHub is a simple and efficient application designed for managing
-          personal notes. It helps keep your thoughts organized and accessible
-          in one place, whether you are at home or on the go.
+          Stop losing your best thoughts to scattered notes. NoteHub is a
+          digital sanctuary designed to turn mental clutter into clear
+          structure. We offer a clean, distraction-free environment focused
+          entirely on your writing. Whether itʼs a simple to-do list or your
+          next big story, NoteHub makes organizing effortless.
         </p>
         <p className={css.description}>
-          The app provides a clean interface for writing, editing, and browsing
-          notes. With support for keyword search and structured organization,
-          NoteHub offers a streamlined experience for anyone who values clarity
-          and productivity.
+          Focus on creating. We’ll take care of the rest.
         </p>
       </div>
     </main>

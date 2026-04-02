@@ -1,23 +1,49 @@
 import css from "@/app/notes/filter/@sidebar/SidebarNotes.module.css";
-
 import Link from "next/link";
-import { noteTags } from "@/types/note";
+import { noteTags, NoteTag } from "@/types/note";
+
+import {
+  RiTodoLine,
+  RiBriefcaseLine,
+  RiUserLine,
+  RiTeamLine,
+  RiShoppingCartLine,
+  RiFileListLine,
+} from "react-icons/ri";
+
+//об'єкт, де іконка
+const tagIcons: Record<NoteTag | "All", React.ElementType> = {
+  Todo: RiTodoLine,
+  Work: RiBriefcaseLine,
+  Personal: RiUserLine,
+  Meeting: RiTeamLine,
+  Shopping: RiShoppingCartLine,
+  All: RiFileListLine,
+};
 
 export default function SidebarNotes() {
   return (
     <ul className={css.menuList}>
       <li className={css.menuItem}>
         <Link href={`/notes/filter/all`} className={css.menuLink}>
+          <RiFileListLine size={20} />
           All notes
         </Link>
       </li>
-      {noteTags.map((noteTag) => (
-        <li className={css.menuItem} key={noteTag}>
-          <Link href={`/notes/filter/${noteTag}`} className={css.menuLink}>
-            {noteTag}
-          </Link>
-        </li>
-      ))}
+
+      {noteTags.map((noteTag) => {
+        // Отримуємо компонент іконки для поточного тегу
+        const Icon = tagIcons[noteTag];
+
+        return (
+          <li className={css.menuItem} key={noteTag}>
+            <Link href={`/notes/filter/${noteTag}`} className={css.menuLink}>
+              {Icon && <Icon size={20} />}
+              {noteTag}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }

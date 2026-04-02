@@ -2,22 +2,40 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .menuItem {
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .menuLink {
   text-decoration: none;
   color: white;
   font-size: 16px;
-  display: block;
-  padding: 8px 16px;
-  transition: background-color 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  padding: 10px 16px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+  background-color: #303030;
 }
 
 .menuLink:hover {
   background-color: #444;
-  color: #ddd;
+  transform: scale(1.02);
+}
+
+.menuLink span {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 12px;
 }

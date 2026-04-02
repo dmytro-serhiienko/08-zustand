@@ -17,20 +17,19 @@
 }
 
 .button {
-  padding: 6px 12px;
+  padding: 8px 12px;
   font-size: 16px;
   color: var(--color-panel-text);
-  background-color: var(--color-accent);
-  border: 1px solid var(--color-accent);
-  border-radius: 30px;
+  background-color: #171717;
+  /* border: 1px solid var(--color-border); */
+  border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 10px 18px rgba(106, 75, 34, 0.18);
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
+  /* box-shadow: 0 10px 18px rgba(106, 75, 34, 0.18); */
+  transition: all 0.3s ease-in-out;
+  border: none;
 }
 
 .button:hover {
-  background-color: var(--color-accent-strong);
-  transform: translateY(-1px);
+  background-color: #434343;
+  transform: scale(1.1);
 }

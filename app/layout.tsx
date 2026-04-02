@@ -1,20 +1,16 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
-
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import { Roboto } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-roboto",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -35,11 +31,11 @@ export default function RootLayout({
   modal: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <TanStackProvider>
-        <body>
+        <body className={`min-h-dvh flex flex-cd ${roboto.variable}`}>
           <Header />
-          <main className="page-content">{children}</main>
+          <main className="flex-1 page-content">{children}</main>
           {modal}
           <Footer />
         </body>

@@ -1,8 +1,17 @@
 .input {
   flex: 1;
   max-width: 240px;
-  padding: 6px 12px;
+  padding: 8px 12px;
   font-size: 16px;
-  border: 1px solid #ced4da;
+  border: 1px solid #171717;
   border-radius: 4px;
+  background-color: #171717;
+  outline: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+  border-color: #8d8d8d;
 }

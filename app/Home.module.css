@@ -1,25 +1,37 @@
 .main {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   width: 90%;
-  max-width: 1280px;
+  max-width: 1111px;
   margin: 0px auto;
-  padding: 0 16px 16px;
+  padding: 20px;
+
+  border-radius: 20px;
+  background-color: #171717;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #ffffff;
   margin-bottom: 60px;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .description {
   font-size: 18px;
-  color: #444444;
+  color: #ffffff;
   line-height: 28px;
   margin-bottom: 16px;
+  text-align: center;
 }
