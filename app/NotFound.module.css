@@ -1,0 +1,18 @@
+.notWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+}
