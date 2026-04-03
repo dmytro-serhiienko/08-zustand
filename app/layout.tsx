@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
 import type { Metadata } from "next";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 import Footer from "@/components/Footer/Footer";
@@ -54,10 +54,12 @@ export default function RootLayout({
       <link rel="shortcut icon" href="/favi.png" type="image/x-icon" />
       <TanStackProvider>
         <body className={`min-h-dvh flex flex-cd ${roboto.variable}`}>
-          <Header />
-          <main className="flex-1 page-content">{children}</main>
-          {modal}
-          <Footer />
+          <SmoothScroll>
+            <Header />
+            <main className="flex-1 page-content">{children}</main>
+            {modal}
+            <Footer />
+          </SmoothScroll>
         </body>
       </TanStackProvider>
     </html>
