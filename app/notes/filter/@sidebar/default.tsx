@@ -32,7 +32,6 @@ export default function SidebarNotes() {
       </li>
 
       {noteTags.map((noteTag) => {
-        // Отримуємо компонент іконки для поточного тегу
         const Icon = tagIcons[noteTag];
 
         return (

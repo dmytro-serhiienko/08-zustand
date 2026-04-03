@@ -19,8 +19,8 @@
 .button {
   padding: 8px 12px;
   font-size: 16px;
-  color: var(--color-panel-text);
-  background-color: #171717;
+  color: black;
+  background-color: #b9d595;
   /* border: 1px solid var(--color-border); */
   border-radius: 4px;
   cursor: pointer;
@@ -30,6 +30,6 @@
 }
 
 .button:hover {
-  background-color: #434343;
+  background-color: #8ce6dd;
   transform: scale(1.1);
 }
