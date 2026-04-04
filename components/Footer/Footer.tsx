@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className={css.footer}>
       <div className={css.content}>
-        <p>© {new Date().getFullYear()} NoteHub. All rights reserved.</p>
+        <p className={css.p}>© {new Date().getFullYear()} NoteHub. All rights reserved.</p>
         <div className={css.wrap}>
-          <p>
+          <p className={ css.p}>
             Developer: <span className={css.nameD}>Dmytro Serhiienko</span>
           </p>
-          <p>
+          <p className={css.p}>
             Contact me:
             <Link
               href="https://github.com/dmytro-serhiienko"

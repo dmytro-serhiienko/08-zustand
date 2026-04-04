@@ -24,7 +24,7 @@ interface FetchNotesResponse {
   totalPages: number;
 }
 
-interface CreateNoteBody {
+export interface CreateNoteBody {
   title: string;
   content: string;
   tag: NoteTag;

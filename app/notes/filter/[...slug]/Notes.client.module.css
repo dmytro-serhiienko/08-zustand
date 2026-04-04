@@ -20,9 +20,9 @@
   padding: 8px 12px;
   font-size: 16px;
   color: black;
-  background-color: #b9d595;
+  background-color: #c0c522;
   /* border: 1px solid var(--color-border); */
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   /* box-shadow: 0 10px 18px rgba(106, 75, 34, 0.18); */
   transition: all 0.3s ease-in-out;

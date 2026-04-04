@@ -9,7 +9,7 @@
   flex-direction: column;
   font-size: 14px;
   font-weight: 500;
-  color: #212529;
+  color: #a0a0a0;
 }
 
 .input,
@@ -18,9 +18,18 @@
   margin-top: 4px;
   padding: 8px 12px;
   font-size: 14px;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
   resize: none;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #555;
 }
 
 .actions {
@@ -32,16 +41,16 @@
 .submitButton {
   padding: 8px 16px;
   font-size: 16px;
-  background-color: #0d6efd;
-  color: #fff;
+  background-color: #c0c522;
+  color: #000;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .submitButton:hover {
-  background-color: #0b5ed7;
+  background-color: #b5b522;
 }
 
 .submitButton:disabled {
@@ -55,7 +64,7 @@
   background-color: #f8f9fa;
   color: #212529;
   border: 1px solid #ced4da;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }

@@ -25,7 +25,7 @@
 
   padding: 10px 16px;
   transition: all 0.3s ease-in-out;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #303030;
 }
 
@@ -38,4 +38,8 @@
   flex-grow: 1;
   text-align: left;
   margin-left: 12px;
+}
+
+.icon {
+  color: #c0c522;
 }

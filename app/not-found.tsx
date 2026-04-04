@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-
 import css from "@/app/NotFound.module.css";
 
 export const metadata: Metadata = {
@@ -26,10 +25,9 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className={css.notWrap}>
-      <h1 className={css.title}>404 - Page not found</h1>
-      <p className={css.description}>
-        Sorry, the page you are looking for does not exist.
-      </p>
+      <h1 className={css.title}>404</h1>
+      <p className={css.back}>404</p>
+      <p className={css.description}>Lost in space...page not found.</p>
     </div>
   );
 }

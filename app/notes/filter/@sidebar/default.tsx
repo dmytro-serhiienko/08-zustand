@@ -26,7 +26,7 @@ export default function SidebarNotes() {
     <ul className={css.menuList}>
       <li className={css.menuItem}>
         <Link href={`/notes/filter/all`} className={css.menuLink}>
-          <RiFileListLine size={20} />
+          <RiFileListLine size={20} className={css.icon} />
           All notes
         </Link>
       </li>
@@ -37,7 +37,7 @@ export default function SidebarNotes() {
         return (
           <li className={css.menuItem} key={noteTag}>
             <Link href={`/notes/filter/${noteTag}`} className={css.menuLink}>
-              {Icon && <Icon size={20} />}
+              {Icon && <Icon size={20} className={css.icon} />}
               {noteTag}
             </Link>
           </li>
