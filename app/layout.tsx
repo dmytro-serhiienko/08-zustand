@@ -52,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href="/favi.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="/faviconCustom.png" type="image/x-icon" />
       <TanStackProvider>
         <ThemeProvider>
           <body className={`min-h-dvh flex flex-cd ${roboto.variable}`}>
