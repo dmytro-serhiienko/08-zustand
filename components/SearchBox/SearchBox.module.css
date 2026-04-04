@@ -3,15 +3,15 @@
   max-width: 240px;
   padding: 8px 12px;
   font-size: 16px;
-  border: 1px solid #171717;
+  border: 1px solid var(--color-surface);
   border-radius: 10px;
-  background-color: #171717;
+  background-color: var(--color-surface);
   outline: none;
-  color: white;
+  color: var(--color-text);
   transition: all 0.3s ease-in-out;
-}
 
-.input:hover,
-.input:focus {
-  border-color: #8d8d8d;
+  &:hover,
+  &:focus {
+    border-color: var(--color-text-muted);
+  }
 }

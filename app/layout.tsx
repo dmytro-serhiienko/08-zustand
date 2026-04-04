@@ -2,6 +2,7 @@ import "./globals.css";
 import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
 import type { Metadata } from "next";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
+import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { Roboto } from "next/font/google";
@@ -53,14 +54,16 @@ export default function RootLayout({
     <html lang="en">
       <link rel="shortcut icon" href="/favi.png" type="image/x-icon" />
       <TanStackProvider>
-        <body className={`min-h-dvh flex flex-cd ${roboto.variable}`}>
-          <SmoothScroll>
-            <Header />
-            <main className="flex-1 page-content">{children}</main>
-            {modal}
-            <Footer />
-          </SmoothScroll>
-        </body>
+        <ThemeProvider>
+          <body className={`min-h-dvh flex flex-cd ${roboto.variable}`}>
+            <SmoothScroll>
+              <Header />
+              <main className="flex-1 page-content">{children}</main>
+              {modal}
+              <Footer />
+            </SmoothScroll>
+          </body>
+        </ThemeProvider>
       </TanStackProvider>
     </html>
   );

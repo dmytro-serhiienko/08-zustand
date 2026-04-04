@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `Notes — ${filter}`,
       description: `Browse notes filtered by ${filter}.`,
-      url: `/notes/filter/${slug.join("/")}`,
+      url: `https://08-zustand-three-brown.vercel.app/notes/filter/${slug.join("/")}`,
       images: [
         {
           url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",

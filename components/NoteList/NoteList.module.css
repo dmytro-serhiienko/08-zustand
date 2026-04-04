@@ -8,8 +8,7 @@
 }
 
 .listItem {
-  background-color: #171717;
-  /* border: 0.5px solid #434343; */
+  background-color: var(--color-surface);
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -23,7 +22,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 8px 0;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .content {
@@ -47,11 +46,12 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-}
+  transition: all 0.3s ease-in-out;
 
-.button:hover {
-  background-color: rgb(139, 55, 40);
+  &:hover {
+    background-color: rgb(139, 55, 40);
+    transform: translateY(-3px);
+  }
 }
 
 .footer {
@@ -67,7 +67,6 @@
   font-size: 12px;
   color: #000;
   background-color: #c0c522;
-  /* border: 1px solid #b6d4fe; */
   border-radius: 10px;
   max-width: 100px;
   white-space: nowrap;
@@ -80,15 +79,16 @@
   padding: 6px 12px;
   font-size: 14px;
   color: #fff;
-  background-color: #434343; /* синій колір */
+  background-color: #434343; 
   border: none;
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.2s ease;
-}
+  transition: all 0.3s ease-in-out;
 
-.link:hover {
-  background-color: #0a3e8b;
+  &:hover {
+    background-color: #0a3e8b;
+    transform: translateY(-3px);
+  }
 }

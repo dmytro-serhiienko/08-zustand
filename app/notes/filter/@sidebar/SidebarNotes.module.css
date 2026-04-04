@@ -15,7 +15,7 @@
 
 .menuLink {
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
   font-size: 16px;
 
   display: flex;
@@ -26,12 +26,12 @@
   padding: 10px 16px;
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
-  background-color: #303030;
-}
+  background-color: var(--color-item-bg);
 
-.menuLink:hover {
-  background-color: #444;
-  transform: scale(1.02);
+  &:hover {
+    background-color: var(--color-item-bg-hover);
+    transform: translateY(-3px);
+  }
 }
 
 .menuLink span {
@@ -41,5 +41,5 @@
 }
 
 .icon {
-  color: #c0c522;
+  color: var(--color-accent);
 }
